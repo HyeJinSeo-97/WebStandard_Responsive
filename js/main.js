@@ -113,10 +113,8 @@ $(function(){
     });
 
     //navigation 접기 펼치기
-    var $navi = $('#nav'),
-        $nav_btn = $('.btn'),
-        $btn_up = '<i class="fa fa-angle-up" aria-hidden="true"></i>',
-        $btn_down = '<i class="fa fa-angle-down" aria-hidden="true"></i>';
+       var $navi = $('#nav'),
+        $nav_btn = $('.btn');
 
     $nav_btn.click(function(ev){
         ev.preventDefault();
@@ -124,10 +122,10 @@ $(function(){
         $navi.toggleClass('click');
         if($navi.hasClass('click')){
             $navi.slideDown();
-            $nav_btn.html($btn_up);
+            $nav_btn.addClass('up');
         }else{
             $navi.slideUp();
-            $nav_btn.html($btn_down);
+            $nav_btn.removeClass('up');
         }
     });
 
