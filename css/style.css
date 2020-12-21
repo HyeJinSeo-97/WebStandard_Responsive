@@ -5,6 +5,9 @@
     width: 1200px; 
     margin: 0 auto; 
 }
+.fa,.fab,.fad,.fal,.far,.fas{
+	font-weight: 900 !important;
+}
 
 /*레이아웃*/
 body{
