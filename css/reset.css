@@ -72,7 +72,3 @@ a:hover {color: #2698cb;}
 .clearfix {zoom: 1;}
 .clearfix:before, .clearfix:after {display: block; content: ''; line-height: 0;}
 .clearfix:after {clear: both;}
-
-.fa,.fab,.fad,.fal,.far,.fas{
-	font-weight: 900 !important;
-	}
