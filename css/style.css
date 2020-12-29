@@ -403,11 +403,18 @@ body{
     font-size:40px;
 }
 .arr i:hover{color:#25a2d0;}
+.arrow a{
+    display:block;
+    width:45px; height:45px;
+    background:url('../img/icon.png') no-repeat;
+}
 .arrow .prev{
     left:8%;
+    background-position:-193px 1px;
 }
 .arrow .next{
     right:8%;
+    background-position:-193px -43px;
 }
 .indicator{
     position:absolute;
@@ -498,25 +505,20 @@ video{
 }
 .side1 .back{
     position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
+    left:0; top:0;
+    width:100%; height:100%;
+    line-height:365px;
     z-index:-1;
-    background-color:#4038dc;
+    color:#fff;
+    background-color:#90dc38;
+    font-size:30px;
+    text-align: center;
+    text-transform:uppercase;
     transform-style:preserve-3d;
     transition:all 0.5s ease-in-out;
     transform:rotateY(-180deg);
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-}
-.side1 .back i{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 60px;
-    color:#fff;
 }
 .side1:hover .front{transform:rotateY(180deg);}
 .side1:hover .back{
